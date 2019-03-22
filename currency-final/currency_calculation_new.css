@@ -1,0 +1,143 @@
+html, body {
+height: 100% auto;
+            margin: 0;
+			background: #c1bfbf;
+		    font-family: 'Tangerine', serif;    	        				
+}
+#myCanvas {
+	    float: right;
+		position: relative;
+    margin-top: 350px;
+    margin-right: -150px;
+        /*margin-top: 500px;*/
+		background-color: #c1bfbf;
+		
+    
+    /*height: 300px;
+    width: 400px;*/
+	
+}
+#main {
+	height: 350px;
+	width: 500px;
+	position: absolute;
+    top: 100px;
+    left: 430px;
+	/*margin-left: 430px;
+	margin-top: 80px;*/
+	background: grey;
+	box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);
+	/*position: fixed;
+	margin-left: calc(100%/2 - 250px);
+	margin-top: calc(100%/2 - 525px);*/
+	
+}
+#first {
+	background: #3a3a39;
+	color: #e2e2ba;
+	width: 500px;
+	height: 1.2em;
+	text-align: center;
+	padding-top: 20px;
+    text-align: center;	
+    font-size: 55px;
+	font-family: 'Great Vibes', cursive;
+}
+ 
+#clockDisplay {
+	background: #626263;
+	color: #2d2d2d;
+	height: 1.2em;
+	padding-top: 5px;
+	padding-left: 130px;
+}
+.calculator {
+	background: grey;
+	height: 40%;
+	box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);
+	
+}
+.calculator table tr td input select {
+	width: calc(100%/2 - 10px);
+}	
+#from #fromAmount #to #toAmount {
+	display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+input[type=text]:focus {
+    background-color: #7c7b7c;;
+	color: #2d2d2d;
+} 
+input[type=text] {
+    background-color: #e2e2ba;
+	color: #2d2d2d;
+}
+ 
+select:focus {
+    background-color: #7c7b7c;
+	color: #2d2d2d;
+} 
+select {
+	color: #2d2d2d;
+	background-color: #e2e2ba;
+}
+
+input {
+	text-align: right;
+	border-radius: 5px 5px 5px 5px;
+	height: 1.6em;
+	box-shadow: 2px 2px #414244;
+	
+}
+table {
+	margin-left: 80px;
+}
+#toAmount {
+	margin-left: 3px;
+}
+select {
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 2px 2px #414244;
+	margin-left: 15px;
+}
+#to {
+	width: 80px;
+}
+#from {
+	width: 80px;
+}
+
+	
+.bottom {
+	background: #3a3a39;
+	width: 500px;
+	height: 70px;
+	box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);
+	margin-top: 20px;
+}
+img {
+float: right;
+width: 30%;
+margin-top: -120px;
+margin-right: 20px;
+height: 60%;
+}
+#from{
+	width: 180px;
+	height: 2em;
+}
+#to {
+	width: 180px;
+	height: 2em;
+}
+
+
+
+
+
+
+
+
+
+	
