@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+    <script src='voicerss-tts.min.js'></script>
+    <link rel="stylesheet" href="calendar.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+   
+
+   
+    <script src="weather.js"></script>
+</head>
+<body>
+        <div class="container" id="content">
+               <a href="#" class="btn btnLeft"  style="width: 3.5vw; height: 50px;" id="previous" onclick="previous()"><i class="far fa-caret-square-left"></i></a>
+           
+            <div id="calendar">
+                  
+             <div id="title" > <h3 class="card-header" id="monthAndYear"></h3>   </div> 
+                <table class="table table-bordered table-responsive-sm" id="calendar">
+                        <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                        </thead>
+            
+                        <tbody id="calendar-body">
+            
+                        </tbody>
+                    </table>
+                    <input type="button" id="myEvents" style="float:left" class="btn btn-danger" value="My Upcoming Events">
+                  
+                   
+
+                    <span id="weather" style="float: right; font-size: 15px;text-align: right;padding-right: 10px;text-align: center"></span>
+                    <img id="img" style="float: right; width: 90px; height: 90px">
+                </div>
+
+                  
+            
+                       
+                        <a href="#" class="btn btnRight" style="width: 3.5vw; height: 50px;" id="next" onclick="next()"><i class="far fa-caret-square-right"></i></a>
+            
+
+            <div id="list" style="display: none"><a href="#" id="removeLink" style="float: right"><i class="fa fa-remove" id="remove" style="font-size:48px;color: #bd2130; "> </i></a>
+            <div id="listContent"></div>
+            
+           
+            </div>
+           <audio src="" id="audio" hidden></audio>
+    </div>
+
+   
+   
+    <script src="myCalendar.js"></script>
+    <script src="eventSorting.js"></script>
+    <script src="speechRec1.js"></script>
+</body>
+</html>

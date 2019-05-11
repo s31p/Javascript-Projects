@@ -1,0 +1,204 @@
+body {
+    /* background-image: "url(images/clouds3.jpg)"; */
+    background-size: cover;
+    object-fit: contain;
+    background-position: center center;
+    
+}
+#content {
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 100vh;
+}
+@media screen and (max-width: 350px) {
+    #content {
+     
+     display: flex;
+     justify-content: space-around;
+    }
+  }
+  
+@media screen and (max-width: 650px) {
+    #content {
+     width: 90vw;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    #content {
+     width: 95vw;
+    }
+  }
+
+.far {
+    font-size: 40px;
+}
+
+@media screen and (max-width: 1180px) {
+    .far {
+     font-size: 35px;
+    }
+  }
+  @media screen and (max-width: 930px) {
+    .far {
+     font-size: 30px;
+    }
+  }
+  /* @media screen and (max-width: 830px) {
+    .far {
+     font-size: 20px;
+    }
+  } */
+
+#monthAndYear {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+height: 150px;
+font-size: 40px;
+font-family: 'Kaushan Script', cursive;
+}
+@media screen and (max-width: 450px) {
+    #monthAndYear {
+        font-size: 20px; 
+       height: 40px;
+       }
+     }
+
+#calendar {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid grey;
+    background-color: gray;
+    opacity: 0.7;
+    color: #fff;
+    text-shadow: 2px 2px black;
+    border-radius: 10px;
+}
+tr th {
+    border: 1px solid grey;
+    height: 80px;
+    font-size: 30px;
+
+font-family: 'Dancing Script', cursive;
+}
+@media screen and (max-width: 690px) {
+    tr th {
+     font-size: 20px;
+     height: 50px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    tr th {
+     font-size: 14px; 
+     height: 50px;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    tr th {
+        font-size: 9px; 
+        height: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+     }
+
+td {
+    border: 1px solid grey;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media screen and (max-width: 930px) {
+    td {
+     font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 690px) {
+    td {
+     height: 30px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    td {
+     font-size: 8px;
+     height:30px; 
+    }
+  }
+  @media screen and (max-width: 350px) {
+   td {
+    font-size: 8px;
+    height: 20px;
+    }
+  }
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .btn {
+     height: 30px;
+    }
+  }
+  
+
+td {
+    width: calc(100%/7);
+}
+
+#myEvents {
+  color: #fff;
+  background-color: #bd2130;
+  height: 5em;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* a#removeLink:hover i#remove  {
+  color: #bd2130;
+} */
+
+#list {
+  position: absolute; 
+  width:40%; 
+  min-height: 150px; 
+  height: auto; 
+  margin-left: 16%; 
+  /* background: linear-gradient(to bottom left, rgba(61, 61, 61, 0.9) 30%, rgba(102, 0, 102, 0.9) 100%); */
+
+}
+
+
+#listContent {
+  width: 95%;
+  min-height: 150px;
+  height: auto;
+  color: #fff;
+  text-shadow: 1px 1px #3d3d3d;
+  font-size: 20px;
+  word-break: break-word;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 10px;
+  padding-top: 10px;
+  background: linear-gradient(to bottom left, rgba(61, 61, 61, 0.9) 30%, rgba(102, 0, 102, 0.9) 100%);
+
+}
+#removeLink {
+  margin-top: -20px;
+}
+
+
+#btnGiveCommand {
+  cursor: pointer;
+}
