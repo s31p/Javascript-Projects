@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="exam2.css">
+    <script
+  src="jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <script src="popper.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+</head>
+<body>
+    
+<div id="main">
+
+<table id="table">
+
+</table>
+<div id="btnContainer" ><button id="clearAll" class="btn btn-danger">Clear All</button><button id="saveAll" class="btn btn-success">Save All</button></div>
+<div id="displayData"><div id="x" style="float:right"><a href="#" id="link"><i class="fa fa-close" style="transform: scale(2.5)"></i></a></div><p id="paragraph"></p></div>
+
+    <form id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+        
+          <div class="modal-content" style="width: 114.15%">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+             <div class="modalInput" id = "modalInput" style="display:flex; width: 98.5%;justify-content: space-between; border: 2px inset grey; border-radius: 5px;">
+                
+                <input id="displayName" class="popperSpan" placeholder="Enter name...">
+                <input id="displayEmail" class="popperSpan" placeholder="Enter Email...">
+                <input id="displayMobile" class="popperSpan" placeholder = "Enter Mobile Number..">
+               
+              
+            </div>
+            <div class="modal-footer">
+                    <button type="submit" class="btn btn-info" id="enter" data-dismiss="modal">Submit</button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </form>
+</div>
+
+<!-- <script src="exam-renderer.js"></script>
+<script src="formLogic.js"></script> -->
+<!-- <script src = "helper-functions.js"></script> -->
+<script src="formLogic2.js"></script>
+<script src="createData.js"></script>
+</body>
+</html>
