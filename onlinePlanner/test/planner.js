@@ -30,6 +30,7 @@ const liMaker = text => {
   const li = document.createElement('li');
   li.setAttribute("class", "listItems");
   var hoursDiv = document.createElement("div");
+  hoursDiv.setAttribute("class", "hoursDiv");
   hoursDiv.style.cssText = "width: 10%; word-break: break-all; min-height: 50px; height: auto; display: flex; justify-content: center; align-items: center; color:#fff; text-shadow: 2px 2px #3d3d3d";
   hoursDiv.textContent = text.hour;
   textDiv = document.createElement("div");

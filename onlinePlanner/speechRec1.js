@@ -61,7 +61,7 @@ var commands = {
     $('#audio').attr('src', url).get(0).play();
     }, 'events': function() {
        // myEvents2.showEvents();
-      //  $('#list').show(1000);
+        $('#list').show(1000);
      //var text = $('#list').find('#listContent').text();
 
      $("#myEvents").trigger("click");
@@ -75,11 +75,21 @@ var commands = {
 // function callSpeechSynt() {
 // var spans = document.getElementsByClassName("span1");
 // for(let i=0; i< spans.length; i++){
-
+//     var spans = document.getElementsByClassName("span1");
+// var text2 = [];
 //var text = spans[i].textContent;
+// for(let i = 0; i< spans.length; i++){
+ //var text = spans[i].textContent.toString().split("-");
+//text = spans[i].textContent.toString().split(";");
+//     // console.log(text[0])
+//     // var date = text[0] +";";
+//     var text = spans[i].textContent.toString().split(" ");
+//     var date = text[0]+";";
+//     text2.push(date);
+// }
 text = text.toString().split("-");
 text = text.toString().split(";");
-console.log(text);
+//console.log(text2);
     // setTimeout(createSpeechSynt(text), 10000); 
     VoiceRSS.speech({
         key: '94dffba985eb4196ba4ba946b9b9cd2f',
@@ -93,7 +103,7 @@ console.log(text);
 //}
 // }
 // setTimeout(callSpeechSynt, 3000);   
-    }, 'dismiss': function() {
+    }, 'close': function() {
         $('#list').hide(1000);
     }, 'next month': function() {
         $('.btnRight').trigger("click");
@@ -105,7 +115,10 @@ console.log(text);
         // $('td:contains("1")').trigger('click');
         $('td#1').trigger('click');
     }, 'today': function () {
+        // var today = new Date();
+        // var date  = today.getDate() + "/" + today.getMonth() + "/" + today.getFullYear();
         $('td.today').trigger('click');
+       // window.location.replace("test/planner.html?date="+date);
     }, 'tomorrow': function() {
         // var tom = parseInt($('td.today').attr('id'));
         // console.log(tom);
